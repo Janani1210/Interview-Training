@@ -22,7 +22,7 @@ public class Leaftaps {
 		driver.findElement(By.id("username")).sendKeys("DemoSalesManager");
 		driver.findElement(By.id("password")).sendKeys("crmsfa");
 		driver.findElement(By.className("decorativeSubmit")).click();
-		driver.findElement(By.linkText("CRM/SFA")).click();
+		//driver.findElement(By.linkText("CRM/SFA")).click();
 	}
 
     @Test

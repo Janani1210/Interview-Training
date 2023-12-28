@@ -34,6 +34,7 @@ public class Leaftaps {
 		driver.findElement(By.id("createLeadForm_lastName")).sendKeys("M");
 		driver.findElement(By.id("createLeadForm_primaryPhoneNumber")).sendKeys("99");
 		driver.findElement(By.name("submitButton")).click();
+		System.out.println("Merge Conflicts");
 
 	}
     @Test
@@ -48,6 +49,7 @@ public class Leaftaps {
 		driver.findElement(By.linkText("Edit")).click();
 		driver.findElement(By.id("updateLeadForm_companyName")).sendKeys("TCS");
 		driver.findElement(By.name("submitButton")).click();
+		
 
 
 }

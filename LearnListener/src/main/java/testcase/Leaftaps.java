@@ -23,6 +23,7 @@ public class Leaftaps {
 		driver.findElement(By.id("password")).sendKeys("crmsfa");
 		driver.findElement(By.className("decorativeSubmit")).click();
 		driver.findElement(By.linkText("CRM/SFA")).click();
+		System.out.println("In before test");
 	}
 
     @Test

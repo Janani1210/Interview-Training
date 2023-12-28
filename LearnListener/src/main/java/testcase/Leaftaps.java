@@ -36,6 +36,7 @@ public class Leaftaps {
 		driver.findElement(By.id("createLeadForm_primaryPhoneNumber")).sendKeys("99");
 		driver.findElement(By.name("submitButton")).click();
 		System.out.println("Merge Conflicts");
+		System.out.println("Remerging");
 
 	}
     @Test

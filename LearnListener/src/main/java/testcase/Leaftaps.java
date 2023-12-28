@@ -27,6 +27,7 @@ public class Leaftaps {
 
     @Test
 	public  void create() {
+    	System.out.println("Clicking Leadss..");
     	driver.findElement(By.linkText("Leads")).click();
 		driver.findElement(By.linkText("Create Lead")).click();
 		driver.findElement(By.id("createLeadForm_companyName")).sendKeys("Testleaf");

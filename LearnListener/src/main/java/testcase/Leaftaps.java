@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 public class Leaftaps {
 	public ChromeDriver driver;
 	public static String number;
+	String address;
 	
 	@BeforeTest
 	public void login() {

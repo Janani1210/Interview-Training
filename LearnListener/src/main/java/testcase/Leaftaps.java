@@ -11,15 +11,16 @@ import org.testng.annotations.Test;
 
 public class Leaftaps {
 	public ChromeDriver driver;
-	public static String name;
-	int number;
-	int size;
+	public static String number;
+	String address;
 	
 	@BeforeTest
 	public void login() {
 		
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.get("http://leaftaps.com/opentaps/control/main");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.findElement(By.id("username")).sendKeys("DemoSalesManager");
 		driver.findElement(By.id("password")).sendKeys("crmsfa");
 		driver.findElement(By.className("decorativeSubmit")).click();

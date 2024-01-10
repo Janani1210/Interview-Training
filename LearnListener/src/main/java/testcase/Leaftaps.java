@@ -11,20 +11,19 @@ import org.testng.annotations.Test;
 
 public class Leaftaps {
 	public ChromeDriver driver;
-	public static String number;
+	public static String name;
+	int number;
+	int size;
 	
 	@BeforeTest
 	public void login() {
 		
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();
 		driver.get("http://leaftaps.com/opentaps/control/main");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.findElement(By.id("username")).sendKeys("DemoSalesManager");
 		driver.findElement(By.id("password")).sendKeys("crmsfa");
 		driver.findElement(By.className("decorativeSubmit")).click();
 		driver.findElement(By.linkText("CRM/SFA")).click();
-		System.out.println("In before test");
 	}
 
     @Test
